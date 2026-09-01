@@ -14,4 +14,4 @@ jobs:
           sudo apt-get install -y nginx >/dev/null
           sudo mkdir -p /var/www/site
           sudo cp templates/nginx.conf /etc/nginx/sites-enabled/default
-          sudo nginx -t
+          sudo nginx -t 2>&1 | tail -2
