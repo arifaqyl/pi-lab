@@ -30,7 +30,7 @@ case "${1:-}" in
     ;;
   restart)
     echo -e "${Y}>>> restarting pm2 apps${N}";   pm2 restart all
-    echo -e "${Y}>>> restarting containers${N}"; docker restart "$(docker ps -q)" 2>/dev/null || true
+    echo -e "${Y}>>> restarting containers${N}"; docker ps -q | xargs -r docker restart
     ;;
   backup)
     dest="$BACKUP_ROOT/$(date +%Y%m%d_%H%M%S)"
