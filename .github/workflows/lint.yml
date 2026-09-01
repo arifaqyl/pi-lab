@@ -1,0 +1,17 @@
+name: lint
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shellcheck
+        run: sudo apt-get install -y shellcheck >/dev/null && shellcheck scripts/manage.sh
+      - name: python compiles
+        run: python3 -m py_compile scripts/check.py
+      - name: nginx config parses
+        run: |
+          sudo apt-get install -y nginx >/dev/null
+          sudo mkdir -p /var/www/site
+          sudo cp templates/nginx.conf /etc/nginx/sites-enabled/default
+          sudo nginx -t

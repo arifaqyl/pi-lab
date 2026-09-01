@@ -1,0 +1,16 @@
+# /etc/cloudflared/config.yml
+#
+# One outbound tunnel; every hostname maps to a local loopback service.
+# The final catch-all returns 404 for any hostname not listed, so a stray
+# DNS record cannot expose something by accident.
+tunnel: <your-tunnel-uuid>
+credentials-file: /etc/cloudflared/<your-tunnel-uuid>.json
+
+ingress:
+  - hostname: example.com
+    service: http://127.0.0.1:80        # nginx, path-routed
+  - hostname: www.example.com
+    service: http://127.0.0.1:80
+  - hostname: n8n.example.com
+    service: http://127.0.0.1:5678      # a Docker service on its own subdomain
+  - service: http_status:404

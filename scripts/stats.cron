@@ -1,0 +1,6 @@
+# Regenerate a static JSON file into the web root every hour.
+# Pattern: compute as the normal user, then `install` into the www-data-owned
+# directory. Never chmod 777 the web root.
+#
+#   crontab -e
+17 * * * * /usr/bin/python3 /home/pi/tools/build_stats.py --out /home/pi/tools/stats.json >/dev/null 2>&1 && sudo install -o www-data -g www-data -m 644 /home/pi/tools/stats.json /var/www/site/stats.json
