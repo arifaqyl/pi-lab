@@ -15,7 +15,7 @@ SESSION_DIRS=(
   "$HOME_DIR/waha_sessions"
 )
 
-G="\033[0;32m"; Y="\033[1;33m"; B="\033[0;34m"; N="\033[0m"
+G="\033[0;32m"; Y="\033[1;33m"; N="\033[0m"
 
 case "${1:-}" in
   status)
