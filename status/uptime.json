@@ -1,0 +1,36 @@
+{
+  "written": 1793298601,
+  "last_alert": 0,
+  "services": {
+    "portfolio": {
+      "up": true,
+      "code": 200,
+      "since": 1793298601
+    },
+    "trafficmy": {
+      "up": true,
+      "code": 200,
+      "since": 1793298601
+    },
+    "sahbukti": {
+      "up": true,
+      "code": 200,
+      "since": 1793298601
+    },
+    "ops-console": {
+      "up": true,
+      "code": 401,
+      "since": 1793298601
+    },
+    "fb-hunter": {
+      "up": true,
+      "code": 401,
+      "since": 1793298601
+    },
+    "n8n": {
+      "up": true,
+      "code": 200,
+      "since": 1793298601
+    }
+  }
+}
