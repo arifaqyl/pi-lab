@@ -1,6 +1,6 @@
 {
-  "written": 1793299871,
-  "last_alert": 1793299871,
+  "written": 1793477179,
+  "last_alert": 1793477179,
   "services": {
     "portfolio": {
       "up": true,
@@ -23,9 +23,9 @@
       "since": 1793298601
     },
     "fb-hunter": {
-      "up": true,
-      "code": 401,
-      "since": 1793298601
+      "up": false,
+      "code": 503,
+      "since": 1793477179
     },
     "n8n": {
       "up": true,
