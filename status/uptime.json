@@ -1,11 +1,11 @@
 {
-  "written": 1793954448,
-  "last_alert": 1793954448,
+  "written": 1793982056,
+  "last_alert": 1793982056,
   "services": {
     "portfolio": {
-      "up": false,
-      "code": 0,
-      "since": 1793954448
+      "up": true,
+      "code": 200,
+      "since": 1793982056
     },
     "trafficmy": {
       "up": true,
