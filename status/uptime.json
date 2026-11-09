@@ -1,6 +1,6 @@
 {
-  "written": 1794181104,
-  "last_alert": 1794181104,
+  "written": 1794223223,
+  "last_alert": 1794223223,
   "services": {
     "portfolio": {
       "up": true,
@@ -8,9 +8,9 @@
       "since": 1793982056
     },
     "trafficmy": {
-      "up": true,
-      "code": 200,
-      "since": 1793298601
+      "up": false,
+      "code": 410,
+      "since": 1794223223
     },
     "sahbukti": {
       "up": true,
@@ -28,9 +28,9 @@
       "since": 1793477179
     },
     "n8n": {
-      "up": true,
-      "code": 200,
-      "since": 1793298601
+      "up": false,
+      "code": 502,
+      "since": 1794223223
     }
   }
 }
