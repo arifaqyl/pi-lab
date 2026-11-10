@@ -21,11 +21,11 @@ import urllib.request
 # name: (url, status codes that count as up). 401 = up behind a login.
 CHECKS = {
     "portfolio": ("https://arifaqyl.me/", {200}),
-    "trafficmy": ("https://arifaqyl.me/traffic/", {200}),
+    # "trafficmy": ("https://arifaqyl.me/traffic/", {200}),  # retired (nginx answers 410)
     "sahbukti": ("https://arifaqyl.me/sahbukti/", {200}),
     "ops-console": ("https://arifaqyl.me/ops-console/", {200, 401}),
-    "fb-hunter": ("https://arifaqyl.me/hunter/", {200, 401}),
-    "n8n": ("https://n8n.arifaqyl.me/", {200}),
+    # "fb-hunter": ("https://arifaqyl.me/hunter/", {200, 401}),  # paused 2026-11-06 on purpose; uncomment with the service
+    # "n8n": ("https://n8n.arifaqyl.me/", {200}),  # containers stopped 2026-11-09; uncomment when n8n runs again
 }
 STATE = pathlib.Path("status/uptime.json")
 REMIND_EVERY = 6 * 3600
